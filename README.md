@@ -1,73 +1,25 @@
-# Welcome to your Lovable project
+Job Automator – AI-Powered Job Application Tool
 
-## Project info
+Description:
+Job Automator is an intelligent automation platform designed to save job seekers hours of repetitive work by streamlining the entire job application process. With a simple interface, users can input a job description (JD), and the system automatically extracts relevant information, including HR email addresses, job titles, and company names.
 
-**URL**: https://lovable.dev/projects/38f1f2e0-670e-4d25-b35e-82da373877b2
+Leveraging AI, Job Automator generates personalized, professional job application emails tailored to the applicant’s skills and experience. The tool can attach the applicant’s resume and send emails via Gmail/SMTP securely. All applications are logged in Google Sheets for easy tracking, providing users with a clear history of submitted applications.
 
-## How can I edit this code?
+Key features include:
 
-There are several ways of editing your application.
+JD Parsing & Skill Extraction: Automatically detects HR emails, job titles, company names, and relevant skills from the JD.
 
-**Use Lovable**
+AI-Powered Email Generation: Creates personalized, concise, and professional application emails using AI, incorporating the applicant’s strengths and skills.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/38f1f2e0-670e-4d25-b35e-82da373877b2) and start prompting.
+Email Automation: Sends applications directly from the user’s Gmail account with secure authorization.
 
-Changes made via Lovable will be committed automatically to this repo.
+Application Tracking: Logs every sent application in Google Sheets for monitoring and follow-up.
 
-**Use your preferred IDE**
+Error Handling & Scalability: Built-in workflow error handling, retries, and logging to ensure reliable automation.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+User-Friendly Interface: Simple web interface to paste job descriptions and click “Apply” without technical setup.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Tech Stack: n8n (workflow automation), OpenAI API (email generation), Gmail/SMTP (email sending), Google Sheets (tracking), Render.com (cloud hosting).
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/38f1f2e0-670e-4d25-b35e-82da373877b2) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Benefit:
+Job Automator dramatically reduces the time and effort needed to apply for multiple positions while ensuring personalized, high-quality applications every time. Ideal for busy professionals, recent graduates, and anyone looking to optimize their job search workflow.
