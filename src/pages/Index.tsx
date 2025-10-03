@@ -40,7 +40,9 @@ const Index = () => {
     setResponse(null);
 
     try {
-      const res = await fetch("https://n8n-render-d94y.onrender.com/webhook-test/v1/job-apply", {
+      // const res = await fetch("https://n8n-render-d94y.onrender.com/webhook-test/v1/job-apply", //test url
+      const res = await fetch("https://n8n-render-d94y.onrender.com/webhook/v1/job-apply", //prod url
+         {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
