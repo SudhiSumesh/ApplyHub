@@ -14,7 +14,6 @@ const Login = () => {
   const navigate = useNavigate();
 
   
-  // Calculated hash: c8f9e7d8b6a4f3e2d1c0b9a8f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2b1a0f9e8
   const VALID_HASH = "935a79bb3a91d9b87879d77ff525016b591cc0767e50e509d39e865f1631a04c";
 
   const hashPassword = async (pwd: string): Promise<string> => {
