@@ -40,7 +40,7 @@ const Index = () => {
 
     try {
     
-      const res = await fetch( import.meta.env.NEXT_PUBLIC_API_BASE_URL, //local url
+      const res = await fetch( import.meta.env.VITE_API_BASE_URL, //local url
       
          {
         method: "POST",
