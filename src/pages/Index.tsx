@@ -7,9 +7,8 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "sonner";
 import { Loader2, Send, RotateCcw, Briefcase, CheckCircle2, AlertCircle, LogOut } from "lucide-react";
-import { set } from "date-fns";
 
-const MAX_CHARS = 1500;
+const MAX_CHARS = 4000;
 
 const Index = () => {
   const navigate = useNavigate();
@@ -40,8 +39,9 @@ const Index = () => {
     setResponse(null);
 
     try {
-      // const res = await fetch("https://n8n-render-d94y.onrender.com/webhook-test/v1/job-apply", //test url
-      const res = await fetch("https://n8n-render-d94y.onrender.com/webhook/v1/job-apply", //prod url
+    
+      const res = await fetch( import.meta.env.NEXT_PUBLIC_API_BASE_URL, //local url
+      
          {
         method: "POST",
         headers: { "Content-Type": "application/json" },
